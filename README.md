@@ -24,7 +24,7 @@ http://localhost:3000/api
 ```bash
 crud -> main.go
 ```
-## Run backend, in productsapi folder
+## Run backend, in crud folder
 ```bash
 $ git clone https://github.com/jhhg04/Golang-CrudUsers-Develoteca/.git
 $ cd crud
