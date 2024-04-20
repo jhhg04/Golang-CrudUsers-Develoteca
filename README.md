@@ -26,7 +26,7 @@ crud -> main.go
 ```
 ## Run backend, in crud folder
 ```bash
-$ git clone https://github.com/jhhg04/Golang-CrudUsers-Develoteca/.git
+$ git clone https://github.com/jhhg04/Golang-CrudUsers-Develoteca.git
 $ cd crud
 $ go run main.go
 http://localhost:8080
