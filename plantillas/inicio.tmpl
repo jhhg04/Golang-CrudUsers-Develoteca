@@ -1,0 +1,32 @@
+{{ define "inicio" }}
+{{ template "cabecera" }}
+  <br />
+  <a class="btn btn-primary" href="/crear" role="button">Add Employee</a>
+  <br />
+  <br />
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range. }}
+        <tr>
+          <th>{{ .Id }}</th>
+          <td>{{ .Nombre }}</td>
+          <td>{{ .Correo }}</td>
+          <td>
+            <a name="" id="" class="btn btn-warning" href="/editar?id={{ .Id }}">Editar</a> |
+            <a name="" id="" class="btn btn-danger" href="/borrar?id={{ .Id }}">Borrar</a>
+          </td>  
+        </tr>
+      {{ end }}  
+    </tbody>
+  </table>
+
+{{ template "pie" }}
+{{ end }}
